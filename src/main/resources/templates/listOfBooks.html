@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../static/css/style.css"
+          th:href="${'css/style.css'}"/>
+    <title>List_of_Books</title>
+</head>
+<body>
+    <div class="page">
+
+        <h1>ALL BOOKS</h1>
+        
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>AUTHOR</th>
+                <th>GENRE</th>
+                <th>PUBLISHER</th>
+                <th>DATE OF PUBLICATION</th>
+                <th>ISBN</th>
+
+            </tr>
+
+            <tr th:each=" oneBook : ${all}">
+                <td th:text="${oneBook.id}">0</td>
+                <td th:text="${oneBook.name}">Mr.</td>
+                <td th:text="${oneBook.author}">James</td>
+                <td th:text="${oneBook.genre}">Bond</td>
+                <td th:text="${oneBook.publisher}"></td>
+                <td th:text="${oneBook.dateOfPublication}"></td>
+                <td th:text="${oneBook.ISBN}">Male</td>
+            </tr>
+
+        </table>
+
+    </div>
+</body>
+</html>

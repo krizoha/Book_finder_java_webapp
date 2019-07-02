@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../static/css/style.css"
+          th:href="${'css/style.css'}"/>
+    <title>Index</title>
+</head>
+<body>
+    <div class="page">
+
+        <h1>FIND BOOK</h1>
+
+        <form method="post">
+            <table>
+
+                <tr>
+                    <td>NAME</td>
+                    <td>
+                        <input name="name"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>AUTHOR</td>
+                    <td>
+                        <input name="author"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>GENRE</td>
+                    <td>
+                        <input name="genre"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PUBLISHER</td>
+                    <td>
+                        <input name="publisher"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>YEAR</td>
+                    <td>
+                        <input name="dateOfPublication"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>ISBN</td>
+                    <td>
+                        <input name="isbn"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="FIND"/>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+        <a href="listOfBooks.html">SEE ALL</a>
+
+    </div>
+</body>
+</html>
